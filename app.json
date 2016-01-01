@@ -1,0 +1,74 @@
+{
+   "builds": {
+      "web": {
+         "default": true
+      },
+      "native": {
+         "packager": "phonegap",
+         "phonegap": {
+            "config": {
+               "platform": "ios",
+               "remote": true,
+               "id": "org.bentonfoundation.bentonmobile",
+               "name": "Benton Mobile",
+               "description": "Mobile application for the Benton Foundation."
+            }
+         }
+      }
+   },
+   "name": "bentonMobile",
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      }
+   ],
+   "css": [
+      {
+         "path": "benton.css",
+         "remote": false
+      },
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/sencha-touch-50e8db62-4504-4ea1-ac0f-a696f6d8c4d2.css"
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/images",
+      "resources/icons",
+      "resources/startup",
+      "benton.css"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [],
+   "id": "8e643188-d8a3-4502-8d0d-3b91ac0614c2"
+}
