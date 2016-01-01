@@ -1,1 +1,28 @@
-*.project
+#Sencha files
+.sencha/
+.sencha_backup/
+build/
+app.json.meta
+bootstrap.js
+bootstrap.json
+
+# sass cache folder
+resources/sass/.sass-cache/
+
+# Library
+touch/
+
+#Phonegap and cordova files
+ios/
+metadata/
+phonegap/
+phonegap.local.properties
+hooks/
+.cordova/
+
+# Mac
+.DS_Store
+
+# Node
+npm-debug.log
+/node_modules
